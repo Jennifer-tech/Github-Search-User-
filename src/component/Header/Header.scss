@@ -25,6 +25,13 @@
     
  }   
 }
+.header_logo p{
+    font-size: 25px;
+    @media (max-width: 720px){
+        font-size: 15px;
+       
+    }   
+}
 .header_github-image,
 .header_github-image img{
     width: 50px;

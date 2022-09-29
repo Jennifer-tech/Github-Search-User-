@@ -1,0 +1,15 @@
+@import '../../common/colors.scss';
+
+.Footer{
+    background: $secondary-color;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-primary;
+    flex-direction: column;
+
+    @media (max-width: 720px){
+        font-size: 12px;
+    }  
+}

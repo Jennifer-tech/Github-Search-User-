@@ -1,19 +1,27 @@
 import React from 'react';
-import Main from './component/Main';
-import github_logo from "./component/github_logo.jpg";
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.scss';
+import Header from './component/Header/Header';
+import Home from './component/Home/Home';
+import UserDetail from './component/UserDetail/UserDetail';
+import PageNotFound from './component/PageNotFound/PageNotFound';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-    <header className='App-header'>
-      <img src={ github_logo } className="App-logo" alt='github_logo'/>
-      <h1>Github Search User App</h1>
-    </header>
-    
-      <Main />
-    </div>
-  );
+    <Router>
+      <Header></Header>
+      <div className='app_container'>
+        <Routes>
+          <Route index path='/' element={<Home />} />
+          <Route path='userDetail/:login' element={<UserDetail />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
+      </div>
+      <Footer></Footer>
+    </Router>
+  )
 }
 
-export default App;
+export default App
+

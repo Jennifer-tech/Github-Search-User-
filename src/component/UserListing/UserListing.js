@@ -7,7 +7,6 @@ import './UserListing.scss';
 
 function UserListing() {
   const users = useSelector(getAllUsers);
-  console.log(users)
   let renderUsers = '';
 
   renderUsers = users.items?.length !== 0 ? (

@@ -5,7 +5,7 @@ import Home from "./Home";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
-import * as redux from "react-redux";
+// import * as redux from "react-redux";
 // import { useDispatch } from "react-redux";
 
 jest.mock("../UserListing/UserListing", () => () => (
@@ -27,7 +27,6 @@ const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
 describe("Home Component", () => {
-  console.log("Test file loaded");
   beforeEach(() => {
     mockDispatch.mockClear();
   })
@@ -56,7 +55,7 @@ describe("Home Component", () => {
         users: {
           items: [
             {
-              login: "chroma",
+              login: "jennifer-tech",
               id: 1,
             },
           ],

@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import UserDetail from "./UserDetail";
 import { MemoryRouter } from "react-router-dom";
-import * as reactRouter from "react-router-dom";
+// import * as reactRouter from "react-router-dom";
 import githubApi from "../../common/apis/githubApi";
 import '@testing-library/jest-dom';
 

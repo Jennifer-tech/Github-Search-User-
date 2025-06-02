@@ -9,7 +9,6 @@ import "./Home.scss";
 const Home = () => {
   const dispatch = useDispatch();
   const users = useSelector(getAllUsers)
-  console.log(users)
   useEffect(
     (term) => {
       dispatch(fetchAsyncUsers(term));

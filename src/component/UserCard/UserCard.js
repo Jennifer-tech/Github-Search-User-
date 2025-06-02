@@ -9,7 +9,7 @@ function UserCard(props) {
    <Link to={`userDetail/${data.login}`}>
      <div className='UserCard_card-inner'>
        <div className='UserCard_card-top'>
-         <img src={data.avatar_url} alt='users.login'/>
+         <img src={data.avatar_url} alt={`${data.login}'s avatar`}/>
        </div>
        <div className='UserCard_card-bottom'>
          <div className='UserCard_card-info'>

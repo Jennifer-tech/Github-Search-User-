@@ -6,28 +6,88 @@ The user of the project inputs any GitHub username of his/her choice, on the cli
 
 This could help my app users easily locate a user and have a quick overview of the searched user which GitHub does not offer at a glance.
 
-### TECHNOLOGIES USED
+---
 
-* [React](https://reactjs.org/)
-* [React-Redux (Redux-toolkit)](https://redux-toolkit.js.org/)
-* [Netlify](https://www.netlify.com/)
+## Features
+
+- Search for GitHub users by username  
+- View user profile details (bio, location, followers, etc.)  
+- View a list of public repositories  
+- Links to user blogs and GitHub profiles  
+- Responsive UI and loading animations (e.g., using Lottie)
+
+---
+
+## Tech Stack
+
+- **Frontend**: React, Redux, React Router, Styled Components  
+- **API**: GitHub REST API  
+- **Animation**: Lottie  
+- **Testing**: Jest, React Testing Library
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/github-search-user.git
+cd github-search-user
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+---
+
+## ⚙️ Project Structure
+
+```
+src/
+│
+├── component/
+│   ├── Home/
+│   ├── Header/
+│   ├── UserCard/
+│   ├── UserDetail/
+│   ├── UserListing/
+│   ├── PageNotFound/
+│   └── Footer/
+│
+├── features/
+│   ├── users/
+│       └── userSlice.js
+│   └── store.js
+│
+├── common/
+│   └── apis/
+│       └── githubApi.js
+│
+├── App.js
+├── index.js
+└── store.js
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+npm test
+```
+
+---
 
 Here is the [live link](https://jenny-github-user-search.netlify.app/) to the project.
 
-### Getting started with Github User Search
+## 🙌 Acknowledgements
 
-### Prerequisites
+- GitHub API  
+- Lottie Files  
+- React Testing Library
 
-To be able to setup the project locally, you need to have the following installed and working properly:
+---
 
-* [Nodejs](https://nodejs.org/en/)
-* NPM and Yarn
-* [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-* [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-
-### Setup Steps
-
-* clone repository
-* cd into the cloned repository
-* yarn
-* npm run start

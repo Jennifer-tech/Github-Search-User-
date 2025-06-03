@@ -31,8 +31,8 @@ This could help my app users easily locate a user and have a quick overview of t
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/github-search-user.git
-cd github-search-user
+git clone https://github.com/Jennifer-tech/Github-Search-User-.git
+cd Github-Search-User-
 
 # Install dependencies
 npm install
